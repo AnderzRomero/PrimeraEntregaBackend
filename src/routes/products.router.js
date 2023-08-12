@@ -24,7 +24,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const producto = res.body;
     productos.push(producto);
-    res.send({ status: "success", message: "Producto Agregado" })
+    res.send({ status: "success", message: "Producto Agregado" }) 
     //con este metodo solictamos crear usuarios
 });
 router.put();
