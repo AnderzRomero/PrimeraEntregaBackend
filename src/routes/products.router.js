@@ -22,16 +22,16 @@ router.get('/', (req, res) => {
     //con este metodo solictamos obtener a los usuarios: consulta
 });
 router.post('/', (req, res) => {
-    const producto = res.body;
+    const producto = req.body;
     productos.push(producto);
     res.send({ status: "success", message: "Producto Agregado" }) 
     //con este metodo solictamos crear usuarios
 });
-router.put();
-router.delete();
+// router.put();
+// router.delete();
 
 
 
 
 
-export default router; //export por default para que en otras partes de mi proyecto se pueda utilizar e importar
+export default router //export por default para que en otras partes de mi proyecto se pueda utilizar e importar
